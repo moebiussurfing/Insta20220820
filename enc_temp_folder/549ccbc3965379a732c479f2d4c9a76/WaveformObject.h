@@ -43,12 +43,13 @@ private:
 
 	void setup() {
 
+
 		this->frame.setMode(ofPrimitiveMode::OF_PRIMITIVE_LINES);
 
 		ui.setup();
 	};
 
-//public:
+public:
 
 	void update() {
 		ofSeedRandom(39);
@@ -119,7 +120,7 @@ public:
 
 		ui.Begin();
 
-		if (ui.BeginWindow("WaveformObject")) {
+		if (ui.BeginWindow("ofApp")) {
 			ui.Add(ui.bMinimize, OFX_IM_TOGGLE_ROUNDED);
 
 			ImGui::SliderFloat("g1", &g1, 0, 1);
@@ -167,8 +168,6 @@ public:
 	};
 
 	void draw() {
-		update();
-
 		ofEnableDepthTest();
 
 		ofPushStyle();
