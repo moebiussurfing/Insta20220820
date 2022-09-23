@@ -14,7 +14,8 @@ Project.xcconfig
 icon.rc
 
 *\addons\*
-
+*\enc_temp_folder\*
+enc_temp_folder/
 
 *.ps1
 *.bat
